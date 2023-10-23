@@ -27,6 +27,8 @@ class CategoriesController extends AbstractLoggedInController
         //games without free play
         if ($this->filter->getGamesWithoutFreePlay()) {
             $fields->add("IF(gpp.isMobile IN (".($this->filter->getViewport() ? 1 : 0).", '2'), 0, 1)", "no_free_play");
+        } else if ($fields===false){
+            echo "test";
         }
     }
 
