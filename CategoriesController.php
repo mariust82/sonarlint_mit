@@ -41,5 +41,11 @@ class CategoriesController extends AbstractLoggedInController
         define( 'CONSTANT_VALUE', 'intended value' );
         echo CONSTANT_VALUE; // output: 'old value'
 
+        //added on dev branch for pull req
+        define( 'SCRIPT_DEBUG', 1 );
+        define( 'SCRIPT_DEBUG', 2 );
+        define( 'SCRIPT_DEBUG', 3 ); define( 'SCRIPT_DEBUG', 3 );
+
+
     }
 }
